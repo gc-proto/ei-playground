@@ -8,7 +8,6 @@ h1, h2, h3, h4, h5, h6 {
 		font-variant-ligatures: no-common-ligatures;
 }
 
-
 h1 {
 
 	font-size: 38px !important;
@@ -18,6 +17,54 @@ h1 {
 
 
 }
+
+
+h2 {
+
+	font-size: 38px !important;
+	font-weight: 600 !important;
+	font-family: 'Lato', sans-serif;
+	padding-top: 15px !important;
+
+}
+
+
+h3 {
+
+	font-size: 26px !important;
+	font-weight: 600 !important;
+	font-family: 'Lato', sans-serif;
+	padding-top: 5px !important;
+
+}
+
+
+h4 {
+
+	font-size: 21px !important;
+	font-weight: 600 !important;
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+h5 {
+
+	font-size: 19px !important;
+	font-weight: 600 !important;
+	font-family: 'Lato', sans-serif;
+}
+
+
+h6 {
+
+	font-size: 19px !important;
+	font-weight: 100 !important;
+	font-family: 'Lato', sans-serif;
+
+}
+
+/* home page specific targets */
 
 .mini-h2s {
 
@@ -29,43 +76,14 @@ h1 {
 }
 
 
-h2 {
+.mr-home {
 
-	font-size: 37px !important;
+	font-size: 17px !important;
 	font-weight: 600 !important;
-	font-family: 'Lato', sans-serif;
-	padding-top: 15px !important;
-
+	padding-bottom: 6px ;
+	font-family: 'Lato', sans-serif !important;
 
 }
-
-
-h3 {
-
-	font-size: 28px !important;
-	font-weight: 600 !important;
-	font-family: 'Lato', sans-serif;
-	padding-top: 5px !important;
-
-}
-
-
-h4 {
-
-	font-size: 23px !important;
-	font-weight: 600 !important;
-	font-family: 'Lato', sans-serif;
-}
-
-
-
-h5 {
-
-	font-size: 20px !important;
-	font-weight: 600 !important;
-	font-family: 'Lato', sans-serif;
-}
-
 
 
 /* larger font size for text-heavy content */
@@ -87,6 +105,9 @@ div.pagedetails summary.btn {
 	font-size: 16px !important;
 }
 
+/* larger font size for text-heavy content */
+
+
 body.content p {
 
 	font-size: 20px !important;
@@ -97,10 +118,19 @@ body.content p {
 
 }
 
-/* On this page, reducing size as an h2*/
-.smh3 {
+/* Customizations for headers in SIT for accessibility, like on this page, h3s that need to be as big as h2s, etc */
 
-	font-size: 28px !important;
+.h2 /* includes custom spacing for SITS */{
+
+	font-size: 38px !important;
+	padding-top: 38px !important;
+
+
+}
+
+.h3 {
+
+	font-size: 26px !important;
 	margin-bottom: 0px !important;
 
 }
@@ -114,14 +144,6 @@ body.content p {
 }
 
 
-.mr-home {
-
-	font-size: 17px !important;
-	font-weight: 600 !important;
-	padding-bottom: 6px ;
-	font-family: 'Lato', sans-serif !important;
-
-}
 
 /* theme page uncarousels */
 div.uncarousel {
@@ -247,11 +269,25 @@ abbr {
 
 .lnkbx ul li {
 	font-size: 19px !important;
-		line-height: 28px !important;
-		list-style-type: disc !important;
-
-
+	line-height: 28px !important;
+	list-style-type: disc !important;
 	margin-left: 50px;
+}
+
+tr td li {
+	font-size: 19px !important;
+	line-height: 28px !important;
+	list-style-type: disc !important;
+	margin-left: 10px !important;
+	margin-right: 0px !important;
+}
+
+
+.example li {
+	font-size: 19px !important;
+	line-height: 28px !important;
+	list-style-type: none !important;
+
 }
 
 .bullet {
@@ -260,25 +296,33 @@ abbr {
 		font-size: 19px !important;
 			line-height: 28px !important;
 			list-style-type: disc !important;
-
-
-		margin-left: 50px;
+			margin-left: 50px;
 
 }
 
 .content-bullet {
 
 
-	font-size: 20px !important;
+		font-size: 20px !important;
 		line-height: 35px !important;
 		list-style-type: disc !important;
-
-
-	margin-left: 50px;
-
-
+		margin-left: 50px;
 
 }
+
+body.content div.bullet li {
+
+
+		font-size: 20px !important;
+		line-height: 35px !important;
+		list-style-type: disc !important;
+		margin-left: 50px;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+
+}
+
+
 
 /* used when bullets are more than short points, and run 2 full lines or more */
 
@@ -338,7 +382,7 @@ background-color: #F8F8F8;
 
 .cust-active   {
 
-	background-color: #4d4d4d !important;
+	background-color: #333 !important;
 	border-color: #8f8f8f  !important;
 
 }
@@ -523,6 +567,20 @@ section.lnkbx ul {
 }
 
 
+
+.bg-primary {
+
+	background-color: #f0f0f0 !important;
+	color: #333 !important;
+	font-weight: 100 !important;
+}
+
+table {
+
+	margin-top: 20px !important;
+}
+
+
 /*  tablet/mobile fonts customizations and scaling */
 
 @media screen and (max-width: 1200px) {
@@ -556,12 +614,12 @@ section.lnkbx ul {
 			}
 
 	h3 {
-				font-size: 25px !important;
+				font-size: 24px !important;
 
 					}
 
 	h4 {
-						font-size: 22px !important;
+						font-size: 20px !important;
 									}
 
 	.ch5 {
